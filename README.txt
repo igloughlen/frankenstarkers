@@ -46,6 +46,8 @@
 
 	Version 3.0, updated 21.06.2010
 
+	NB: This is now available on the 3.0 branch
+
 	Re-built using 'Twenty Ten' theme as its base
 
 	- - - - - - - - - - - - - - - - - - - - - - -

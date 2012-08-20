@@ -31,6 +31,10 @@
 
 	- - - - - - - - - - - - - - - - - - - - - - -
 
+	Version 4.0, updated 20.08.2012
+
+	Normalising file comments and removal of template name
+
 	Version 4.0, updated 02.08.2012
 
 	Completely re-written from the ground up, 

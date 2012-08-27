@@ -12,7 +12,7 @@
 <?php get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header' ) ); ?>
 
 <?php if ( have_posts() ): ?>
-<h2>Tag Archive: <?php echo single_tag_title( '', false ); ?>
+<h2>Tag Archive: <?php echo single_tag_title( '', false ); ?></h2>
 <ol>
 <?php while ( have_posts() ) : the_post(); ?>
 	<li>

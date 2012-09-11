@@ -33,5 +33,3 @@
 <?php endif; ?>
 
 <?php get_template_parts( array( 'parts/shared/footer','parts/shared/html-footer') ); ?>
-
-YYYY-MM-DDThh:mm:ssTZD

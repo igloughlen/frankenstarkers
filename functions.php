@@ -93,7 +93,5 @@
 				<time><a href="#comment-<?php comment_ID() ?>" pubdate><?php comment_date() ?> at <?php comment_time() ?></a></time>
 				<?php comment_text() ?>
 			</article>
-		<?php endif; ?>
-		</li>
-		<?php 
+		<?php endif;
 	}

@@ -1,7 +1,9 @@
 <?php
 
 	/**
-	 * Starkers Utility Functions v.1.1
+	 * Starkers_Utilities
+	 *
+	 * Starkers Utilities Class v.1.1
 	 *
 	 * @package 	WordPress
 	 * @subpackage 	Starkers
@@ -9,6 +11,7 @@
 	 *
 	 * We've included a number of helper functions that we use in every theme we produce.
 	 * The main one that is used in Starkers is Starkers_Utilities::add_slug_to_body_class(), this will add the page or post slug to the body class
+	 *
 	 */
 	 
 	 class Starkers_Utilities {

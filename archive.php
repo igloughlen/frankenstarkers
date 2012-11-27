@@ -7,14 +7,14 @@
  *
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * Please see /external/starkers-utilities.php for info on get_template_parts() 
+ * Please see /external/starkers-utilities.php for info on Starkers_Utilities::get_template_parts() 
  *
  * @package 	WordPress
  * @subpackage 	Starkers
  * @since 		Starkers 4.0
  */
 ?>
-<?php get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header' ) ); ?>
+<?php Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header' ) ); ?>
 
 <?php if ( have_posts() ): ?>
 
@@ -43,4 +43,4 @@
 <h2>No posts to display</h2>	
 <?php endif; ?>
 
-<?php get_template_parts( array( 'parts/shared/footer','parts/shared/html-footer' ) ); ?>
+<?php Starkers_Utilities::get_template_parts( array( 'parts/shared/footer','parts/shared/html-footer' ) ); ?>

@@ -1,4 +1,9 @@
-	<!-- Bootstrap javascript
+	<!-- jQuery
+    ================================================== -->
+    <!-- Remove if you don't plan on using jQuery --> 
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+    <!-- Bootstrap javascript
     ================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->    
     <script src="<?php echo get_template_directory_uri();?>/js/jquery.js"></script>

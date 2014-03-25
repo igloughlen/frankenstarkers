@@ -12,8 +12,13 @@
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 		<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon.ico"/>
 		
+		<!--Bootstrap-->
 		<link href="<?php echo get_template_directory_uri();?>/css/bootstrap.css" rel="stylesheet">
 		<link href="<?php echo get_template_directory_uri();?>/css/bootstrap-responsive.css" rel="stylesheet">
+
+		<!--Responsive-Nav-->
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/responsive-nav.css">
+		<script src="<?php echo get_template_directory_uri();?>/js/responsive-nav.min.js"></script>
 		
 		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     	<!--[if lt IE 9]>

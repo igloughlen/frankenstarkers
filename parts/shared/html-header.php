@@ -12,8 +12,8 @@
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 		<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon.ico"/>
 		
-		<link href="../../css/bootstrap.css" rel="stylesheet">
-		<link href="../../css/bootstrap-responsive.css" rel="stylesheet">
+		<link href="<?php echo get_template_directory_uri();?>/css/bootstrap.css" rel="stylesheet">
+		<link href="<?php echo get_template_directory_uri();?>/css/bootstrap-responsive.css" rel="stylesheet">
 		
 		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     	<!--[if lt IE 9]>

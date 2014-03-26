@@ -1,3 +1,4 @@
+@import "css/reset.css";
 /*
 Theme Name: 	FrankenStarkers
 Theme URI: 		http://igloughlen.github.io/frankenstarkers
@@ -11,27 +12,13 @@ Tags: 			starkers, bootstrap, clean, basic, responsive
 ===========================
 CONTENTS:
 
-01 Utility
-02 Default Styles
+01 Sensible defaults
+02 Typography
 03 Media queries 
 ===========================
 */
 /* ---------------------------------------------------------------------------------------------------------- 
-01 UTILITY (Styles for early stages of layout and user testing)----------------------------------------------
----------------------------------------------------------------------------------------------------------- */
-.test {
-  background-color: #ff0000;
-  color: #fff;
-}
-.wireframe {
-  background-color: #eee;
-  border: 1px solid #ccc;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-}
-/* ---------------------------------------------------------------------------------------------------------- 
-02 DEFAULTS -------------------------------------------------------------------------------------------------
+01 DEFAULTS ----------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------- */
 div,
 article,

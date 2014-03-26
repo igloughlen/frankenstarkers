@@ -13,8 +13,8 @@
  * @subpackage 	Starkers
  * @since 		Starkers 4.0
  */
-Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header' ) ); ?>
-<?php Starkers_Utilities::get_template_parts( array( 'parts/shared/header' ) ); ?>
+?>
+<?php Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header' ) ); ?>
 
 <?php if ( have_posts() ): ?>
 

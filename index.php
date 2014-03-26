@@ -25,40 +25,42 @@ Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header' ) ); ?
 
       <!-- Example row of columns -->
       <div class="row">
-        <div class="col-md-4 wireframe">
+        <div class="col-md-4">
           <h2>Heading</h2>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
           <p><a class="btn btn-default btn-sm" href="#">View details &raquo;</a></p>
         </div>
-        <div class="col-md-4 wireframe">
+        <div class="col-md-4">
           <h2>Heading</h2>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
           <p><a class="btn btn-default btn-sm" href="#">View details &raquo;</a></p>
        </div>
-        <div class="col-md-4 wireframe">
+        <div class="col-md-4">
           <h2>Heading</h2>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
           <p><a class="btn btn-default btn-sm" href="#">View details &raquo;</a></p>
         </div>
       </div><!-- .row -->
-
-<div class="row">
-  <?php if ( have_posts() ): ?>
-  <h2>Latest Posts</h2>	
-  <ul>
-  <?php while ( have_posts() ) : the_post(); ?>
-  	<li>
-  		<article>
-  			<h2><a href="<?php esc_url( the_permalink() ); ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-  			<time datetime="<?php the_time( 'Y-m-d' ); ?>" pubdate><?php the_date(); ?> <?php the_time(); ?></time> <?php comments_popup_link('Leave a Comment', '1 Comment', '% Comments'); ?>
-  			<?php the_content(); ?>
-  		</article>
-  	</li>
-  <?php endwhile; ?>
-  </ul>
-  <?php else: ?>
-  <h2>No posts to display</h2>
-  <?php endif; ?>
-</div>
+      <hr>
+      <div class="row">
+        <div class="col-md-12">
+          <?php if ( have_posts() ): ?>
+          <h2>Latest Posts</h2>	
+          <ul>
+          <?php while ( have_posts() ) : the_post(); ?>
+          	<li>
+          		<article>
+          			<h2><a href="<?php esc_url( the_permalink() ); ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+          			<time datetime="<?php the_time( 'Y-m-d' ); ?>" pubdate><?php the_date(); ?> <?php the_time(); ?></time> <?php comments_popup_link('Leave a Comment', '1 Comment', '% Comments'); ?>
+          			<?php the_content(); ?>
+          		</article>
+          	</li>
+          <?php endwhile; ?>
+          </ul>
+          <?php else: ?>
+          <h2>No posts to display</h2>
+          <?php endif; ?>
+        </div>
+      </div><!-- row -->
 
 <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/footer','parts/shared/html-footer') ); ?>

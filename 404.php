@@ -56,7 +56,10 @@ Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header' ) ); ?
 <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header' ) ); ?>
 
 <h2>Page not found</h2>
+<<<<<<< HEAD
 <div id="found_search"><?php get_search_form(); ?></div>
 >>>>>>> parent of 8eff555... Expanded functionality of 404 page
+=======
+>>>>>>> parent of e645742... Add search to 404 page
 
 <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/footer','parts/shared/html-footer' ) ); ?>

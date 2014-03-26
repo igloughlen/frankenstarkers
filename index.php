@@ -46,7 +46,7 @@ Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header' ) ); ?
       </div><!-- .row -->
       <hr>
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-8 col-md-offset-2">
           <?php if ( have_posts() ): ?>
           <h2>Latest Posts</h2>	
           <ul>

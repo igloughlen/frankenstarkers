@@ -8,6 +8,7 @@
  * @subpackage 	Starkers
  * @since 		Starkers 4.0
  */
+<<<<<<< HEAD
 Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header' ) ); ?>
 <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/header' ) ); ?>
 
@@ -51,5 +52,12 @@ Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header' ) ); ?
 
 			</div><!-- .page-content -->
 		</section><!-- .error-404 -->
+=======
+?>
+<?php Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header' ) ); ?>
+
+<h2>Page not found</h2>
+<div id="found_search"><?php get_search_form(); ?></div>
+>>>>>>> parent of 8eff555... Expanded functionality of 404 page
 
 <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/footer','parts/shared/html-footer' ) ); ?>

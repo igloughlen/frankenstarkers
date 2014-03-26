@@ -12,10 +12,10 @@
  * @subpackage 	Starkers
  * @since 		Starkers 4.0
  */
-?>
-<?php Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header' ) ); ?>
-      
+Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header' ) ); ?>
 
+<?php Starkers_Utilities::get_template_parts( array( 'parts/shared/header' ) ); ?>
+      
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="jumbotron">
         <h1>Hello, world!</h1>

@@ -8,8 +8,8 @@
  * @subpackage 	Starkers
  * @since 		Starkers 4.0
  */
-?>
-<?php Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header' ) ); ?>
+Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header' ) ); ?>
+<?php Starkers_Utilities::get_template_parts( array( 'parts/shared/header' ) ); ?>
 
 <?php if ( have_posts() ): ?>
 <h2>Tag Archive: <?php echo single_tag_title( '', false ); ?></h2>

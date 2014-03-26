@@ -8,7 +8,8 @@ Author URI: 	http://www.ivanloughlen.com
 Tags: 			starkers, bootstrap, clean, basic, responsive
 */
 
-
+@import "variables.less";
+@import "mixins.less";
 
 /*
 ===========================
@@ -58,10 +59,18 @@ body 				{ background:#fff; /* Don't forget to style your body to avoid user ove
 /* ---------------------------------------------------------------------------------------------------------- 
 03 Media Queries (using a mobile-first approach) ------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------- */
+// Adjust media query breakpoints in variables.less
+// Place you styles her for sm and xsm screens and greater
 
-/* 400 and up */
-@media screen and (min-width:400px) {
-// Place your styles here for all widths greater than 400px
+
+@media screen and (min-width: @screen-sm) {
+// Place your styles here for medium screens and greater
+
+
+}
+
+@media screen and (min-width: @screen-md) {
+// Place your styles here for large and xlarge screens and greater
 
 
 }

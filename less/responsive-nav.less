@@ -1,5 +1,7 @@
 /*! responsive-nav.js 1.0.32 by @viljamis */
 
+@import "variables.less";
+
 .nav-collapse ul {
   margin: 0;
   padding: 0;
@@ -40,7 +42,7 @@
   user-select: none;
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: @screen-sm) {
   .js .nav-collapse {
     position: relative;
   }

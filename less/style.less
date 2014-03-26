@@ -28,6 +28,7 @@ CONTENTS:
 .test{
 	background-color: #ff0000;
 	color: #fff;
+	z-index: 10000px;
 }
 .wireframe{
 	background-color: #eee;
@@ -36,6 +37,14 @@ CONTENTS:
 	-moz-border-radius:    5px; 
 	border-radius:         5px;
 
+}
+.wireframe-tall{
+	.wireframe;
+	min-height: 500px;
+}
+.wireframe-short{
+	.wireframe;
+	min-height: 100px;
 }
 
 

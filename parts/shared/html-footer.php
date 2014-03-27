@@ -5,19 +5,20 @@
 
     <!-- Bootstrap javascript
     ================================================== -->
-	<!-- Placed at the end of the document so the pages load faster -->    
+	<!-- Placed at the end of the document so the pages load faster -->
+    <!-- To activate .js plugins, uncomment and remove from php -->    
     <script src="<?php echo get_template_directory_uri();?>/js/affix.js"></script>
-    <script src="<?php echo get_template_directory_uri();?>/js/alert.js"></script>
+    <?php /* <script src="<?php echo get_template_directory_uri();?>/js/alert.js"></script> */ ?>
     <script src="<?php echo get_template_directory_uri();?>/js/button.js"></script>
-    <script src="<?php echo get_template_directory_uri();?>/js/carousel.js"></script>
-    <script src="<?php echo get_template_directory_uri();?>/js/collapse.js"></script>
-    <script src="<?php echo get_template_directory_uri();?>/js/dropdown.js"></script>
-    <script src="<?php echo get_template_directory_uri();?>/js/modal.js"></script>
-    <script src="<?php echo get_template_directory_uri();?>/js/popover.js"></script>
+    <?php /* <script src="<?php echo get_template_directory_uri();?>/js/carousel.js"></script> */ ?>
+    <?php /* <script src="<?php echo get_template_directory_uri();?>/js/collapse.js"></script> */ ?>
+    <?php /* <script src="<?php echo get_template_directory_uri();?>/js/dropdown.js"></script> */ ?>
+    <?php /* <script src="<?php echo get_template_directory_uri();?>/js/modal.js"></script> */ ?>
+    <?php /* <script src="<?php echo get_template_directory_uri();?>/js/popover.js"></script> */ ?>
     <script src="<?php echo get_template_directory_uri();?>/js/scrollspy.js"></script>
     <script src="<?php echo get_template_directory_uri();?>/js/site.js"></script>
-    <script src="<?php echo get_template_directory_uri();?>/js/tab.js"></script>
-    <script src="<?php echo get_template_directory_uri();?>/js/tooltip.js"></script>
+    <?php /* <script src="<?php echo get_template_directory_uri();?>/js/tab.js"></script> */ ?>
+    <?php /* <script src="<?php echo get_template_directory_uri();?>/js/tooltip.js"></script> */ ?>
     <script src="<?php echo get_template_directory_uri();?>/js/transition.js"></script>
 
     <!--Responsive-Nav Hookup-->

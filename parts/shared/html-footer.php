@@ -1,7 +1,3 @@
-	<!-- jQuery
-    ================================================== -->
-    <!-- Remove if you don't plan on using jQuery --> 
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 
     <!-- Bootstrap javascript
     ================================================== -->

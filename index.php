@@ -50,7 +50,8 @@ Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header' ) ); ?
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
             <article id="post-<?php the_ID(); ?>" <?php if(is_category('featured')): ?>class="featured-post"<?php endif; ?>>
-              <h1><?php the_title() ;?></h1>    
+              <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail() ?></a>
+              <h2><a href="<?php the_permalink(); ?>"><?php the_title() ;?></a></h2>    
 
               <p>
                 Published on <?php the_time('M j, Y'); ?> 
@@ -58,7 +59,7 @@ Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header' ) ); ?
                 in <span class="badge"><?php the_category(', '); ?></span>
               </p>
 
-              <?php the_content(); ?>
+              <?php the_excerpt(); ?>
 
             </article>
 

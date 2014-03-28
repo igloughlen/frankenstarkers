@@ -20,14 +20,18 @@
 	/* ========================================================================================================================
 	
 	Theme specific settings
-
-	Uncomment register_nav_menus to enable a single menu with the title of "Primary Navigation" in your theme
 	
 	======================================================================================================================== */
 
-	add_theme_support('post-thumbnails');
+	// Add RSS feed links to <head> for posts and comments.
+	add_theme_support( 'automatic-feed-links' );
 	
-	// register_nav_menus(array('primary' => 'Primary Navigation'));
+	// Enable support for Post Thumbnails, and declare two sizes.
+	add_theme_support('post-thumbnails');
+	set_post_thumbnail_size( 672, 372, true );
+	add_image_size( 'twentyfourteen-full-width', 1038, 576, true );
+	
+	register_nav_menus(array('primary' => 'Primary Navigation'));
 
 	/* ========================================================================================================================
 	

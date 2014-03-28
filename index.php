@@ -44,26 +44,27 @@ Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header' ) ); ?
           <p><a class="btn btn-default btn-sm" href="#">View details &raquo;</a></p>
         </div>
       </div><!-- .row -->
-      <hr>
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-          <?php if ( have_posts() ): ?>
-          <h2>Latest Posts</h2>	
-          <ul>
-          <?php while ( have_posts() ) : the_post(); ?>
-          	<li>
-          		<article>
-          			<h2><a href="<?php esc_url( the_permalink() ); ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-          			<time datetime="<?php the_time( 'Y-m-d' ); ?>" pubdate><?php the_date(); ?> <?php the_time(); ?></time> <?php comments_popup_link('Leave a Comment', '1 Comment', '% Comments'); ?>
-          			<?php the_content(); ?>
-          		</article>
-          	</li>
-          <?php endwhile; ?>
-          </ul>
-          <?php else: ?>
-          <h2>No posts to display</h2>
+        <hr>
+          <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+          <article id="post-<?php the_ID(); ?>" <?php if(is_category('featured')): ?>class="featured-post"<?php endif; ?>>
+            <h1><?php the_title() ;?></h1>    
+
+            <p>
+              Published on <?php the_time('M j, Y'); ?> 
+              by <span class="badge"><?php the_author(', '); ?></span>
+              in <span class="badge"><?php the_category(', '); ?></span>
+            </p>
+
+            <?php the_content(); ?>
+
+          </article>
+
+          <?php endwhile; else: ?>
+
+            <p>Sorry, this post does not exist</p>
+
           <?php endif; ?>
-        </div>
       </div><!-- row -->
 
 <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/footer','parts/shared/html-footer') ); ?>

@@ -1,12 +1,12 @@
 <?php
 	/**
-	 * Starkers functions and definitions
+	 * FrankenStarkers functions and definitions
 	 *
 	 * For more information on hooks, actions, and filters, see http://codex.wordpress.org/Plugin_API.
 	 *
  	 * @package 	WordPress
- 	 * @subpackage 	Starkers
- 	 * @since 		Starkers 4.0
+ 	 * @subpackage 	FrankenStarkers
+ 	 * @since 		FrankenStarkers 1.0
 	 */
 
 	/* ========================================================================================================================

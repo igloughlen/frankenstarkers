@@ -10,8 +10,8 @@
  * Please see /external/starkers-utilities.php for info on Starkers_Utilities::get_template_parts()
  *
  * @package 	WordPress
- * @subpackage 	Starkers
- * @since 		Starkers 4.0
+ * @subpackage 	FrankenStarkers
+ * @since 		FrankenStarkers 1.0
  */
 Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header' ) ); ?>
 <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/header' ) ); ?>

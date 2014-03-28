@@ -3,14 +3,14 @@
 	/**
 	 * Starkers_Utilities
 	 *
-	 * Starkers Utilities Class v.1.1
+	 * FrankenStarkers Utilities Class v.1.1
 	 *
 	 * @package 	WordPress
-	 * @subpackage 	Starkers
-	 * @since 		Starkers 4.0
+	 * @subpackage 	FrankenStarkers
+	 * @since 		FrankenStarkers 1.0
 	 *
 	 * We've included a number of helper functions that we use in every theme we produce.
-	 * The main one that is used in Starkers is Starkers_Utilities::add_slug_to_body_class(), this will add the page or post slug to the body class
+	 * The main one that is used in FrankenStarkers is Starkers_Utilities::add_slug_to_body_class(), this will add the page or post slug to the body class
 	 *
 	 */
 	 

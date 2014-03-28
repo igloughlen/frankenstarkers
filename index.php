@@ -36,7 +36,7 @@ Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header' ) ); ?
           <h2>Heading</h2>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
           <p><a class="btn btn-default btn-sm" href="#">View details &raquo;</a></p>
-       </div>
+        </div>
         <div class="col-sm-4">
           <img class="img-circle" src="http://placekitten.com/200/200"></img>
           <h2>Heading</h2>
@@ -44,27 +44,30 @@ Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header' ) ); ?
           <p><a class="btn btn-default btn-sm" href="#">View details &raquo;</a></p>
         </div>
       </div><!-- .row -->
+      <div class="row">
         <hr>
-          <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+        <div id="index_loop" class="col-md-6 col-md-offset-3">
+            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-          <article id="post-<?php the_ID(); ?>" <?php if(is_category('featured')): ?>class="featured-post"<?php endif; ?>>
-            <h1><?php the_title() ;?></h1>    
+            <article id="post-<?php the_ID(); ?>" <?php if(is_category('featured')): ?>class="featured-post"<?php endif; ?>>
+              <h1><?php the_title() ;?></h1>    
 
-            <p>
-              Published on <?php the_time('M j, Y'); ?> 
-              by <span class="badge"><?php the_author(', '); ?></span>
-              in <span class="badge"><?php the_category(', '); ?></span>
-            </p>
+              <p>
+                Published on <?php the_time('M j, Y'); ?> 
+                by <span class="badge"><?php the_author(', '); ?></span>
+                in <span class="badge"><?php the_category(', '); ?></span>
+              </p>
 
-            <?php the_content(); ?>
+              <?php the_content(); ?>
 
-          </article>
+            </article>
 
-          <?php endwhile; else: ?>
+            <?php endwhile; else: ?>
 
-            <p>Sorry, this post does not exist</p>
+              <p>Sorry, this post does not exist</p>
 
-          <?php endif; ?>
+            <?php endif; ?>
+          </div><!-- #index_loop -->
       </div><!-- row -->
 
 <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/footer','parts/shared/html-footer') ); ?>

@@ -2,7 +2,11 @@
 	/**
 	 * FrankenStarkers functions and definitions
 	 *
-	 * For more information on hooks, actions, and filters, see http://codex.wordpress.org/Plugin_API.
+	 * Functions that are not pluggable (not wrapped in function_exists()) are
+	 * instead attached to a filter or action hook.
+	 *
+	 * For more information on hooks, actions, and filters,
+	 * @link http://codex.wordpress.org/Plugin_API
 	 *
  	 * @package 	WordPress
  	 * @subpackage 	FrankenStarkers
@@ -31,7 +35,11 @@
 	set_post_thumbnail_size( 672, 372, true );
 	add_image_size( 'twentyfourteen-full-width', 1038, 576, true );
 	
-	register_nav_menus(array('primary' => 'Primary Navigation'));
+	// This theme uses wp_nav_menu() in two locations.
+	register_nav_menus( array(
+		'primary'   => __( 'Top primary menu', 'frankenstarkers' ),
+		'footer' => __( 'Footer menu', 'frankenstarkers' ),
+	) );
 
 	/* ========================================================================================================================
 	

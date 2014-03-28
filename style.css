@@ -74,7 +74,7 @@ li {
   /* For clearing */
 }
 body {
-  background: #fff;
+  background: #ffffff;
   /* Don't forget to style your body to avoid user overrides */
 }
 ::-moz-selection {
@@ -84,6 +84,12 @@ body {
 ::selection {
   background: #ff0;
   color: #333;
+}
+footer .menu ul li {
+  display: inline;
+}
+footer .menu ul li:last-of-type .delimiter {
+  display: none;
 }
 /* ---------------------------------------------------------------------------------------------------------- 
 03 Media Queries (using a mobile-first approach) ------------------------------------------------------------

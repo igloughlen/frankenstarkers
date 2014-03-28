@@ -85,6 +85,12 @@ body {
   background: #ff0;
   color: #333;
 }
+.screen-reader-text {
+  display: none;
+}
+.search-form {
+  max-width: 400px;
+}
 footer .menu ul li {
   display: inline;
 }

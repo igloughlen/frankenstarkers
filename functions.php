@@ -35,6 +35,13 @@
 	set_post_thumbnail_size( 672, 372, true );
 	add_image_size( 'twentyfourteen-full-width', 1038, 576, true );
 	
+	// Replaces the excerpt "more" text by a link
+	function new_excerpt_more($more) {
+    global $post;
+	return ' <a class="moretag" href="'. get_permalink($post->ID) . '">Read the full article...</a>';
+	}
+	add_filter('excerpt_more', 'new_excerpt_more');
+
 	// This theme uses wp_nav_menu() in two locations.
 	register_nav_menus( array(
 		'primary'   => __( 'Top primary menu', 'frankenstarkers' ),

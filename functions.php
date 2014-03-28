@@ -98,7 +98,31 @@
 		wp_register_style( 'screen', get_stylesheet_directory_uri().'/style.css', '', '', 'screen' );
         wp_enqueue_style( 'screen' );
 	}	
+	/* ========================================================================================================================
+	
+	Widgets
+	
+	======================================================================================================================== */
+	function arphabet_widgets_init() {
 
+	/*Example Widget */
+	register_sidebar( array(
+		'name' => 'Home right sidebar',
+		'id' => 'home_right_1',
+		'before_widget' => '<div>',
+		'after_widget' => '</div>',
+		'before_title' => '<h2 class="rounded">',
+		'after_title' => '</h2>',
+	) );
+	/* Example Widget End */
+	
+	/* New Widgets Start*/
+
+	/* New Widgets End */
+	} 
+
+
+	add_action( 'widgets_init', 'arphabet_widgets_init' );
 	/* ========================================================================================================================
 	
 	Comments

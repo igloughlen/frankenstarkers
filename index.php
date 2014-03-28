@@ -44,6 +44,17 @@ Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header' ) ); ?
           <p><a class="btn btn-default btn-sm" href="#">View details &raquo;</a></p>
         </div>
       </div><!-- .row -->
+      
+      <!-- Example row of widgets -->
+      <div class="row">
+        <div class="col-sm-12">
+        <!-- Widget test -->
+            <?php if ( dynamic_sidebar('home_right_1') ) : else : endif; ?>
+        <!-- Widget test END -->
+        </div>
+      </div>
+       <!-- Example row of widgets END -->
+
       <div class="row">
         <hr>
         <div id="index_loop" class="col-md-6 col-md-offset-3">

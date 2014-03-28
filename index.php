@@ -55,7 +55,7 @@ Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header' ) ); ?
 
               <p>
                 Published on <?php the_time('M j, Y'); ?> 
-                by <span class="badge"><?php the_author(', '); ?></span>
+                by <span class="badge"><a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><?php the_author(', '); ?></a></span>
                 in <span class="badge"><?php the_category(', '); ?></span>
               </p>
 

@@ -91,10 +91,10 @@ body {
 .search-form {
   max-width: 400px;
 }
-footer .menu ul li {
+.menu-footer ul li {
   display: inline;
 }
-footer .menu ul li:last-of-type .delimiter {
+.menu-footer ul li:last-of-type .delimiter {
   display: none;
 }
 /* ---------------------------------------------------------------------------------------------------------- 

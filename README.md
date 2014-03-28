@@ -22,5 +22,5 @@ Starkers is a bare-bones WordPress theme created to act as a starting point for 
 The most popular front-end framework for developing responsive, mobile first projects on the web.
 
 [**Responsive Nav**](http://responsive-nav.com/)
-Responsive Nav is a tiny JavaScript plugin which weighs only ~1KB minified and Gzip’ed, and helps you to create a toggled navigation for small screens. It uses touch events and CSS3 transitions for the best possible performance. It also contains a “clever” workaround that makes it possible to transition from height: 0 to height: auto, which isn’t normally possible with CSS3 transitions. View live demo or resize this window to see the plugin in action.
+Responsive Nav is a tiny JavaScript plugin which weighs only ~1KB minified and Gzip’ed, and helps you to create a toggled navigation for small screens. It uses touch events and CSS3 transitions for the best possible performance. It also contains a “clever” workaround that makes it possible to transition from height: 0 to height: auto, which isn’t normally possible with CSS3 transitions.
 

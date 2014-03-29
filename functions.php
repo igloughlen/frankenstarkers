@@ -68,6 +68,12 @@
 
 	add_filter( 'body_class', array( 'Starkers_Utilities', 'add_slug_to_body_class' ) );
 
+	add_action('wp_footer', 'add_googleanalytics');
+	function add_googleanalytics() {
+	// Paste your full Google Analytics Tracking Code here.
+	}
+
+
 	/* ========================================================================================================================
 	
 	Custom Post Types - include custom post types and taxonimies here e.g.

@@ -12,9 +12,12 @@
  * @subpackage 	FrankenStarkers
  * @since 		FrankenStarkers 1.0
  */
+//Get the <head>
 Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header' ) ); ?>
 
-<?php Starkers_Utilities::get_template_parts( array( 'parts/shared/header' ) ); ?>
+<?php 
+//Get the header
+Starkers_Utilities::get_template_parts( array( 'parts/shared/header' ) ); ?>
       
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="jumbotron">
@@ -24,7 +27,7 @@ Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header' ) ); ?
       </div>
 
       <!-- Example row of columns -->
-      <div class="row">
+      <div id="example_cats" class="row">
         <div class="col-sm-4">
           <img class="img-circle" src="http://placekitten.com/200/200"></img>
           <h2>Heading</h2>
@@ -46,7 +49,7 @@ Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header' ) ); ?
       </div><!-- .row -->
       
       <!-- Example row of widgets -->
-      <div class="row">
+      <div id="example_widgets" class="row">
         <div class="col-sm-12">
         <!-- Widget test -->
             <?php if ( dynamic_sidebar('home_right_1') ) : else : endif; ?>
@@ -55,7 +58,7 @@ Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header' ) ); ?
       </div>
        <!-- Example row of widgets END -->
 
-      <div class="row">
+      <div id="featured_posts" class="row">
         <hr>
         <div id="index_loop" class="col-md-6 col-md-offset-3">
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -76,7 +79,9 @@ Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header' ) ); ?
 
             <?php endwhile; else: ?>
 
-              <p>Sorry, this post does not exist</p>
+              <h2>Sorry, we couldn't find any posts</H2>
+              <p>Maybe, you can try searching for what you were looking for.</p>
+              <?php get_search_form(); ?>
 
             <?php endif; ?>
           </div><!-- #index_loop -->

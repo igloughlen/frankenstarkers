@@ -35,6 +35,12 @@
 	set_post_thumbnail_size( 672, 372, true );
 	add_image_size( 'twentyfourteen-full-width', 1038, 576, true );
 	
+	// Custom excerpt length
+	function custom_excerpt_length( $length ) {
+	return 100;
+	}
+	add_filter( 'excerpt_length', 'custom_excerpt_length' );
+
 	// Replaces the excerpt "more" text by a link
 	function new_excerpt_more($more) {
     global $post;
@@ -72,6 +78,19 @@
 	function add_googleanalytics() {
 	// Paste your full Google Analytics Tracking Code here.
 	}
+
+	// If a search returns only 1 post, redirect to that post
+	add_action('template_redirect', 'redirect_single_post');
+	function redirect_single_post() {
+    if (is_search()) {
+        global $wp_query;
+        if ($wp_query->post_count == 1 && $wp_query->max_num_pages == 1) {
+            wp_redirect( get_permalink( $wp_query->posts['0']->ID ) );
+            exit;
+        }
+    }
+}
+
 
 
 	/* ========================================================================================================================

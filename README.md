@@ -1,4 +1,4 @@
-##FRANKENSTARKERS##
+#FRANKENSTARKERS#
 
 Created by students at **Seattle Central Creative Academy**
 Based on **Starkers** *by Veiwport Industries, Ltd.*
@@ -13,7 +13,7 @@ www.ivanloughlen.com
 Riley Hollobaugh
 @rileywho
 
-#Sources#
+##Sources/Features##
 
 [**Starkers**](https://github.com/viewportindustries/starkers)
 Starkers is a bare-bones WordPress theme created to act as a starting point for the theme designer. Free of all style, presentational elements, and non-semantic markup, Starkers is the perfect ‘blank slate’ for all your WordPress projects.

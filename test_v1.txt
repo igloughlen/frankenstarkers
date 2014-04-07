@@ -1,6 +1,5 @@
-test v5
-merge isnt working
-This is for testing if github is working without risking real files
+test v1
 
-You got deleted. I'm Ivan.
-You got deleted. Yep this is a new local sentance.
+This is for testing github's connection with local repositories. You can delete this.
+
+This is a test file. 

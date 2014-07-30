@@ -33,7 +33,11 @@
 	// Enable support for Post Thumbnails, and declare two sizes.
 	add_theme_support('post-thumbnails');
 	set_post_thumbnail_size( 672, 372, true );
-	add_image_size( 'twentyfourteen-full-width', 1038, 576, true );
+	add_image_size( 'custom-image-size', 1038, 576, true );
+
+	// Add CSS to Visual Editor
+	add_editor_style('css/bootstrap.css');
+	add_editor_style('style.css');
 	
 	// Custom excerpt length
 	function custom_excerpt_length( $length ) {
@@ -54,10 +58,7 @@
 		'footer' => __( 'Footer menu', 'frankenstarkers' ),
 	) );
 
-	/*
-	 * Switch default core markup for search form, comment form, and comments
-	 * to output valid HTML5.
-	 */
+	//Switch default core markup for search form, comment form, and comments to output valid HTML5.
 	add_theme_support( 'html5', array(
 		'search-form', 'comment-form', 'comment-list', 'gallery', 'caption'
 	) );
@@ -74,11 +75,6 @@
 
 	add_filter( 'body_class', array( 'Starkers_Utilities', 'add_slug_to_body_class' ) );
 
-	add_action('wp_footer', 'add_googleanalytics');
-	function add_googleanalytics() {
-	// Paste your full Google Analytics Tracking Code here.
-	}
-
 	// If a search returns only 1 post, redirect to that post
 	add_action('template_redirect', 'redirect_single_post');
 	function redirect_single_post() {
@@ -87,9 +83,9 @@
         if ($wp_query->post_count == 1 && $wp_query->max_num_pages == 1) {
             wp_redirect( get_permalink( $wp_query->posts['0']->ID ) );
             exit;
-        }
-    }
-}
+        	}
+    	}
+	}
 
 
 
@@ -123,6 +119,22 @@
 		wp_register_style( 'screen', get_stylesheet_directory_uri().'/style.css', '', '', 'screen' );
         wp_enqueue_style( 'screen' );
 	}	
+
+	//Enable SVG upload
+	function cc_mime_types( $mimes ){
+		$mimes['svg'] = 'image/svg+xml';
+		return $mimes;
+	}
+	add_filter( 'upload_mimes', 'cc_mime_types' );
+
+	//Fix SVG display in Media Library
+	function custom_admin_head() {
+		$css = '';
+		$css = 'td.media-icon img[src$=".svg"] { width: 100% !important; height: auto !important; }';
+		echo '<style type="text/css">'.$css.'</style>';
+	}
+	add_action('admin_head', 'custom_admin_head');
+
 	/* ========================================================================================================================
 	
 	Widgets

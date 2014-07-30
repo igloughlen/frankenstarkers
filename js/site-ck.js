@@ -1,1 +1,0 @@
-jQuery(document).ready(function(e){e(function(){e("a[href*=#]:not([href=#])").click(function(){if(location.pathname.replace(/^\//,"")==this.pathname.replace(/^\//,"")&&location.hostname==this.hostname){var t=e(this.hash);t=t.length?t:e("[name="+this.hash.slice(1)+"]");if(t.length){e("html,body").animate({scrollTop:t.offset().top},1e3);return!1}}})})});

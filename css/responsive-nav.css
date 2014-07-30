@@ -1,9 +1,4 @@
 /*! responsive-nav.js 1.0.32 by @viljamis */
-/*
-===========================
-VARIABLES
-===========================
-*/
 .nav-collapse ul {
   margin: 0;
   padding: 0;
@@ -47,5 +42,13 @@ VARIABLES
   }
   .nav-toggle {
     display: none;
+  }
+  .nav-collapse ul {
+    width: auto;
+    float: right;
+  }
+  .nav-collapse ul li {
+    width: auto;
+    display: inline;
   }
 }

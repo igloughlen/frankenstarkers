@@ -1,7 +1,10 @@
+/* ========================================================================
+ * Smooth Scroll - Performs a smooth page scroll to an anchor on the same page.
+ * http://css-tricks.com/snippets/jquery/smooth-scrolling/
+ * ======================================================================== */
+ 
+ jQuery(document).ready(function($) {
 
-jQuery(document).ready(function($) {
-  
-//Smooth Scrolling
   $(function() {
     $('a[href*=#]:not([href=#])').click(function() {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -16,8 +19,4 @@ jQuery(document).ready(function($) {
       }
     });
   });
-
-//Your code here
-
 });
-

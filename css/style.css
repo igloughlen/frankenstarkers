@@ -92,6 +92,11 @@ body {
 .menu-footer ul li:last-of-type .delimiter {
   display: none;
 }
+a,
+a:focus,
+a:active {
+  outline: none;
+}
 /* Responsive Embedded Video from http://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php */
 .videowrapper {
   position: relative;

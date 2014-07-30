@@ -18,49 +18,16 @@ Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header' ) ); ?
 <?php 
 //Get the header
 Starkers_Utilities::get_template_parts( array( 'parts/shared/header' ) ); ?>
-      
-      <!-- Main hero unit for a primary marketing message or call to action -->
-      <div class="jumbotron">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-      </div>
-
-      <!-- Example row of columns -->
-      <div id="example_cats" class="row">
-        <div class="col-sm-4">
-          <img class="img-circle" src="http://placekitten.com/200/200"></img>
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default btn-sm" href="#">View details &raquo;</a></p>
-        </div>
-        <div class="col-sm-4">
-          <img class="img-circle" src="http://placekitten.com/200/200"></img>
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default btn-sm" href="#">View details &raquo;</a></p>
-        </div>
-        <div class="col-sm-4">
-          <img class="img-circle" src="http://placekitten.com/200/200"></img>
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default btn-sm" href="#">View details &raquo;</a></p>
-        </div>
-      </div><!-- .row -->
-      
-      <!-- Example row of widgets -->
-      <div id="example_widgets" class="row">
-        <div class="col-sm-12">
-        <!-- Widget test -->
-            <?php if ( dynamic_sidebar('home_right_1') ) : else : endif; ?>
-        <!-- Widget test END -->
-        </div>
-      </div>
-       <!-- Example row of widgets END -->
 
       <div id="featured_posts" class="row">
         <hr>
         <div id="index_loop" class="col-md-6 col-md-offset-3">
+            <?php query_posts( array( 
+              'post_type' => 'post', 
+              'order' => 'ASC',
+              'orderby' => 'date',
+              )); 
+            ?>
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
             <article id="post-<?php the_ID(); ?>" <?php if(is_category('featured')): ?>class="featured-post"<?php endif; ?>>

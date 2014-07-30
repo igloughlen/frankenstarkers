@@ -22,7 +22,7 @@
 
 		<!--Responsive-Nav-->
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/responsive-nav.css">
-		<script src="<?php echo get_template_directory_uri();?>/js/responsive-nav.min.js"></script>
+		<script src="<?php echo get_template_directory_uri();?>/js/responsive-nav.js"></script>
 		
 
 		<?php

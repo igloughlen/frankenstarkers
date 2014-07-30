@@ -12,6 +12,7 @@
     <!-- <script src="<?php echo get_template_directory_uri();?>/js/popover.js"></script> -->
     <!-- <script src="<?php echo get_template_directory_uri();?>/js/scrollspy.js"></script> -->
     <!-- <script src="<?php echo get_template_directory_uri();?>/js/site.js"></script> -->
+    <!-- <script src="<?php echo get_template_directory_uri();?>/js/smoothscroll.js"></script> -->
     <!-- <script src="<?php echo get_template_directory_uri();?>/js/tab.js"></script> -->
     <!-- <script src="<?php echo get_template_directory_uri();?>/js/tooltip.js"></script> -->
     <!-- <script src="<?php echo get_template_directory_uri();?>/js/transition.js"></script> -->

@@ -1,60 +1,16 @@
-/*
-===========================
-VARIABLES
-===========================
-*/
+//
+// Variables
+// --------------------------------------------------
 
 
-//CONTENTS:
-
-//01 Colors
-//02 Scaffolding
-//03 Typography
-//04 Iconography
-//05 Components
-//06 Tables
-//07 Button
-//08 Forms
-//09 Dropdowns
-//10 Z-index
-//11 Media queries
-//12 Grid system
-//13 Container sizes
-//14 Navbar
-//15 Navs
-//16 Tabs
-//17 Pills
-//18 Pagination
-//19 Pager
-//20 Jumbotron
-//21 Form states
-//22 Tooltips
-//23 Popovers
-//24 Labels
-//25 Modals
-//26 Alerts
-//27 Progress bars
-//28 List group//29 Panels
-//30 Thumbnails
-//31 Wells
-//32 Badge
-//33 Breadcrumbs
-//34 Carousel
-//35 Close
-//36 Code
-//37 Type
-//38 Miscellaneous
-
-
-
-//== 01 Colors
+//== Colors
 //
 //## Gray and brand colors for use across Bootstrap.
 
 @gray-darker:            lighten(#000, 13.5%); // #222
 @gray-dark:              lighten(#000, 20%);   // #333
 @gray:                   lighten(#000, 33.5%); // #555
-@gray-light:             lighten(#000, 60%);   // #999
+@gray-light:             lighten(#000, 46.7%); // #777
 @gray-lighter:           lighten(#000, 93.5%); // #eee
 
 @brand-primary:         #428bca;
@@ -64,9 +20,9 @@ VARIABLES
 @brand-danger:          #d9534f;
 
 
-//== 02 Scaffolding
+//== Scaffolding
 //
-// ## Settings for some of the most global styles.
+//## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
 @body-bg:               #fff;
@@ -79,7 +35,7 @@ VARIABLES
 @link-hover-color:      darken(@link-color, 15%);
 
 
-//== 03 Typography
+//== Typography
 //
 //## Font, line-height, and color for body text, headings, and more.
 
@@ -112,15 +68,19 @@ VARIABLES
 @headings-color:          inherit;
 
 
-//== 04 Iconography
+//== Iconography
 //
-//## Specify custom locations of the include Glyphicons icon font. Useful for those including Bootstrap via Bower.
+//## Specify custom location and filename of the included Glyphicons icon font. Useful for those including Bootstrap via Bower.
 
+//** Load fonts from this directory.
 @icon-font-path:          "../fonts/";
+//** File name for all font files.
 @icon-font-name:          "glyphicons-halflings-regular";
+//** Element ID within SVG icon file.
 @icon-font-svg-id:        "glyphicons_halflingsregular";
 
-//== 05 Components
+
+//== Components
 //
 //## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
 
@@ -154,7 +114,7 @@ VARIABLES
 @caret-width-large:         5px;
 
 
-//== 06 Tables
+//== Tables
 //
 //## Customizes the `.table` component with basic values, each used across all table variations.
 
@@ -175,7 +135,7 @@ VARIABLES
 @table-border-color:            #ddd;
 
 
-//== 07 Buttons
+//== Buttons
 //
 //## For each of Bootstrap's buttons, define text, background and border color.
 
@@ -208,7 +168,7 @@ VARIABLES
 @btn-link-disabled-color:        @gray-light;
 
 
-//== 08 Forms
+//== Forms
 //
 //##
 
@@ -245,7 +205,7 @@ VARIABLES
 @input-group-addon-border-color: @input-border;
 
 
-//== 09 Dropdowns
+//== Dropdowns
 //
 //## Dropdown menu container and contents.
 
@@ -276,11 +236,11 @@ VARIABLES
 //** Text color for headers within dropdown menus.
 @dropdown-header-color:          @gray-light;
 
-// Note: Deprecated @dropdown-caret-color as of v3.1.0
+//** Deprecated `@dropdown-caret-color` as of v3.1.0
 @dropdown-caret-color:           #000;
 
 
-//== 10 Z-index master list
+//-- Z-index master list
 //
 // Warning: Avoid customizing these values. They're used for a bird's eye view
 // of components dependent on the z-axis and are designed to all work together.
@@ -289,39 +249,44 @@ VARIABLES
 
 @zindex-navbar:            1000;
 @zindex-dropdown:          1000;
-@zindex-popover:           1010;
-@zindex-tooltip:           1030;
+@zindex-popover:           1060;
+@zindex-tooltip:           1070;
 @zindex-navbar-fixed:      1030;
 @zindex-modal-background:  1040;
 @zindex-modal:             1050;
 
 
-//== 11 Media Query Breakpoints
+//== Media queries breakpoints
 //
 //## Define the breakpoints at which your layout will change, adapting to different screen sizes.
 
 // Extra small screen / phone
-// Note: Deprecated @screen-xs and @screen-phone as of v3.0.1
+//** Deprecated `@screen-xs` as of v3.0.1
 @screen-xs:                  480px;
+//** Deprecated `@screen-xs-min` as of v3.2.0
 @screen-xs-min:              @screen-xs;
+//** Deprecated `@screen-phone` as of v3.0.1
 @screen-phone:               @screen-xs-min;
 
 // Small screen / tablet
-// Note: Deprecated @screen-sm and @screen-tablet as of v3.0.1
+//** Deprecated `@screen-sm` as of v3.0.1
 @screen-sm:                  768px;
 @screen-sm-min:              @screen-sm;
+//** Deprecated `@screen-tablet` as of v3.0.1
 @screen-tablet:              @screen-sm-min;
 
 // Medium screen / desktop
-// Note: Deprecated @screen-md and @screen-desktop as of v3.0.1
+//** Deprecated `@screen-md` as of v3.0.1
 @screen-md:                  992px;
 @screen-md-min:              @screen-md;
+//** Deprecated `@screen-desktop` as of v3.0.1
 @screen-desktop:             @screen-md-min;
 
 // Large screen / wide desktop
-// Note: Deprecated @screen-lg and @screen-lg-desktop as of v3.0.1
+//** Deprecated `@screen-lg` as of v3.0.1
 @screen-lg:                  1200px;
 @screen-lg-min:              @screen-lg;
+//** Deprecated `@screen-lg-desktop` as of v3.0.1
 @screen-lg-desktop:          @screen-lg-min;
 
 // So media queries don't overlap when required, provide a maximum
@@ -330,7 +295,7 @@ VARIABLES
 @screen-md-max:              (@screen-lg-min - 1);
 
 
-//== 12 Grid system
+//== Grid system
 //
 //## Define your custom responsive grid.
 
@@ -345,7 +310,7 @@ VARIABLES
 @grid-float-breakpoint-max: (@grid-float-breakpoint - 1);
 
 
-//== 13 Container sizes
+//== Container sizes
 //
 //## Define the maximum width of `.container` for different screen sizes.
 
@@ -365,7 +330,7 @@ VARIABLES
 @container-lg:                 @container-large-desktop;
 
 
-//== 14 Navbar
+//== Navbar
 //
 //##
 
@@ -427,11 +392,11 @@ VARIABLES
 @navbar-inverse-toggle-border-color:        #333;
 
 
-//== 15 Navs
+//== Navs
 //
 //##
 
-//-- Shared nav styles
+//=== Shared nav styles
 @nav-link-padding:                          10px 15px;
 @nav-link-hover-bg:                         @gray-lighter;
 
@@ -440,7 +405,7 @@ VARIABLES
 
 @nav-open-link-hover-color:                 #fff;
 
-//== 16 Tabs
+//== Tabs
 @nav-tabs-border-color:                     #ddd;
 
 @nav-tabs-link-hover-border-color:          @gray-lighter;
@@ -452,13 +417,13 @@ VARIABLES
 @nav-tabs-justified-link-border-color:            #ddd;
 @nav-tabs-justified-active-link-border-color:     @body-bg;
 
-//== 17 Pills
+//== Pills
 @nav-pills-border-radius:                   @border-radius-base;
 @nav-pills-active-link-hover-bg:            @component-active-bg;
 @nav-pills-active-link-hover-color:         @component-active-color;
 
 
-//== 18 Pagination
+//== Pagination
 //
 //##
 
@@ -479,7 +444,7 @@ VARIABLES
 @pagination-disabled-border:           #ddd;
 
 
-//== 19 Pager
+//== Pager
 //
 //##
 
@@ -495,7 +460,7 @@ VARIABLES
 @pager-disabled-color:                 @pagination-disabled-color;
 
 
-//== 20 Jumbotron
+//== Jumbotron
 //
 //##
 
@@ -506,7 +471,7 @@ VARIABLES
 @jumbotron-font-size:            ceil((@font-size-base * 1.5));
 
 
-//== 21 Form states and alerts
+//== Form states and alerts
 //
 //## Define colors for form feedback states and, by default, alerts.
 
@@ -527,7 +492,7 @@ VARIABLES
 @state-danger-border:            darken(spin(@state-danger-bg, -10), 5%);
 
 
-//== 22 Tooltips
+//== Tooltips
 //
 //##
 
@@ -545,7 +510,7 @@ VARIABLES
 @tooltip-arrow-color:         @tooltip-bg;
 
 
-//== 23 Popovers
+//== Popovers
 //
 //##
 
@@ -574,7 +539,7 @@ VARIABLES
 @popover-arrow-outer-fallback-color:  darken(@popover-fallback-border-color, 20%);
 
 
-//== 24 Labels
+//== Labels
 //
 //##
 
@@ -597,12 +562,12 @@ VARIABLES
 @label-link-hover-color:      #fff;
 
 
-//== 25 Modals
+//== Modals
 //
 //##
 
 //** Padding applied to the modal body
-@modal-inner-padding:         20px;
+@modal-inner-padding:         15px;
 
 //** Padding applied to the modal title
 @modal-title-padding:         15px;
@@ -630,7 +595,7 @@ VARIABLES
 @modal-sm:                    300px;
 
 
-//== 26 Alerts
+//== Alerts
 //
 //## Define alert colors, border radius, and padding.
 
@@ -655,7 +620,7 @@ VARIABLES
 @alert-danger-border:         @state-danger-border;
 
 
-//== 27 Progress bars
+//== Progress bars
 //
 //##
 
@@ -676,7 +641,7 @@ VARIABLES
 @progress-bar-info-bg:        @brand-info;
 
 
-//== 28 List group
+//== List group
 //
 //##
 
@@ -687,26 +652,37 @@ VARIABLES
 //** List group border radius
 @list-group-border-radius:      @border-radius-base;
 
-//** Background color of single list elements on hover
+//** Background color of single list items on hover
 @list-group-hover-bg:           #f5f5f5;
-//** Text color of active list elements
+//** Text color of active list items
 @list-group-active-color:       @component-active-color;
-//** Background color of active list elements
+//** Background color of active list items
 @list-group-active-bg:          @component-active-bg;
 //** Border color of active list elements
 @list-group-active-border:      @list-group-active-bg;
+//** Text color for content within active list items
 @list-group-active-text-color:  lighten(@list-group-active-bg, 40%);
 
+//** Text color of disabled list items
+@list-group-disabled-color:      @gray-light;
+//** Background color of disabled list items
+@list-group-disabled-bg:         @gray-lighter;
+//** Text color for content within disabled list items
+@list-group-disabled-text-color: @list-group-disabled-color;
+
 @list-group-link-color:         #555;
+@list-group-link-hover-color:   @list-group-link-color;
 @list-group-link-heading-color: #333;
 
 
-//== 29 Panels
+//== Panels
 //
 //##
 
 @panel-bg:                    #fff;
 @panel-body-padding:          15px;
+@panel-heading-padding:       10px 15px;
+@panel-footer-padding:        @panel-heading-padding;
 @panel-border-radius:         @border-radius-base;
 
 //** Border color for elements within panels
@@ -738,7 +714,7 @@ VARIABLES
 @panel-danger-heading-bg:     @state-danger-bg;
 
 
-//== 30 Thumbnails
+//== Thumbnails
 //
 //##
 
@@ -757,7 +733,7 @@ VARIABLES
 @thumbnail-caption-padding:   9px;
 
 
-//== 31 Wells
+//== Wells
 //
 //##
 
@@ -765,7 +741,7 @@ VARIABLES
 @well-border:                 darken(@well-bg, 7%);
 
 
-//== 32 Badges
+//== Badges
 //
 //##
 
@@ -784,7 +760,7 @@ VARIABLES
 @badge-border-radius:         10px;
 
 
-//== 33 Breadcrumbs
+//== Breadcrumbs
 //
 //##
 
@@ -800,7 +776,7 @@ VARIABLES
 @breadcrumb-separator:          "/";
 
 
-//== 34 Carousel
+//== Carousel
 //
 //##
 
@@ -817,7 +793,7 @@ VARIABLES
 @carousel-caption-color:                      #fff;
 
 
-//== 35 Close
+//== Close
 //
 //##
 
@@ -826,7 +802,7 @@ VARIABLES
 @close-text-shadow:           0 1px 0 #fff;
 
 
-//== 36 Code
+//== Code
 //
 //##
 
@@ -842,10 +818,12 @@ VARIABLES
 @pre-scrollable-max-height:   340px;
 
 
-//== 37 Type
+//== Type
 //
 //##
 
+//** Horizontal offset for forms and lists.
+@component-offset-horizontal: 180px;
 //** Text muted color
 @text-muted:                  @gray-light;
 //** Abbreviations and acronyms border color
@@ -860,14 +838,9 @@ VARIABLES
 @blockquote-border-color:     @gray-lighter;
 //** Page header border color
 @page-header-border-color:    @gray-lighter;
-
-
-//== 38 Miscellaneous
-//
-//##
-
+//** Width of horizontal description list titles
+@dl-horizontal-offset:        @component-offset-horizontal;
 //** Horizontal line color.
 @hr-border:                   @gray-lighter;
 
-//** Horizontal offset for forms and lists.
-@component-offset-horizontal: 180px;
+

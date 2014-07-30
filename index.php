@@ -20,7 +20,7 @@ Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header' ) ); ?
 Starkers_Utilities::get_template_parts( array( 'parts/shared/header' ) ); ?>
 
       <div id="featured_posts" class="row">
-        <hr>
+
         <div id="index_loop" class="col-md-6 col-md-offset-3">
             <?php query_posts( array( 
               'post_type' => 'post', 

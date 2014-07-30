@@ -67,6 +67,12 @@ body 				{ background:@body-bg; /* Don't forget to style your body to avoid user
 .search-form        { max-width: 400px}
 .menu-footer ul li  { display: inline; &:last-of-type .delimiter{display:none;}}
 
+/* Responsive Embedded Video from http://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php */
+.videowrapper       { position: relative; padding-bottom: 54%; /* 16:9 */ padding-top: 25px; height: 0; margin: 20px auto;}
+.videowrapper object,
+.videowrapper embed,
+.videowrapper iframe{ position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+
 /* ---------------------------------------------------------------------------------------------------------- 
 03 Media Queries (using a mobile-first approach) ------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------- */

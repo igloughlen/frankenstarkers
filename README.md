@@ -1,10 +1,10 @@
 #FRANKENSTARKERS#
 
-Created by students at **Seattle Central Creative Academy**
+Created by students at **Seattle Central Creative Academy**.
 Based on **Starkers** *by Veiwport Industries, Ltd.*
 and **Bootstrap 3** *by Twitter, Inc.*
 
-FrankenStarkers is a blank starter theme with an integrated modern responsive framework. Ideal for wireframing, prototyping and learning to create WordPress themes.
+FrankenStarkers is a blank starter theme with an integrated, modern, responsive framework. Ideal for wireframing, prototyping, and learning to create WordPress themes.
 
 Ivan Loughlen
 www.ivanloughlen.com
